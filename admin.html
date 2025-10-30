@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Admin • Premium Drop Shop</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <h1>Admin Dashboard</h1>
+  <nav><a href="index.html">Storefront</a></nav>
+</header>
+
+<main class="container">
+  <section id="auth-box" class="card">
+    <h3>Login</h3>
+    <label>Email <input id="email" type="email" required></label>
+    <label>Password <input id="password" type="password" required></label>
+    <button id="loginBtn" class="btn primary">Login</button>
+    <div id="authMsg" class="muted"></div>
+  </section>
+
+  <section id="admin-area" class="hidden">
+    <div class="grid-2">
+      <div class="card">
+        <h3>Products</h3>
+        <form id="prodForm" class="stack">
+          <input id="ptitle" placeholder="Title" required>
+          <input id="pcat" placeholder="Category (e.g., entertainment)">
+          <input id="pprice" type="number" step="0.01" placeholder="Price" required>
+          <textarea id="pdesc" placeholder="Description"></textarea>
+          <label><input id="pavail" type="checkbox" checked> Available</label>
+          <button class="btn primary" type="submit">Add / Update</button>
+        </form>
+        <div id="prodList"></div>
+      </div>
+
+      <div class="card">
+        <h3>Orders</h3>
+        <div id="stats" class="muted"></div>
+        <div id="orderList"></div>
+      </div>
+    </div>
+    <button id="logoutBtn" class="btn">Logout</button>
+  </section>
+</main>
+
+<script type="module" src="app.js"></script>
+<script type="module" src="admin.js"></script>
+</body>
+</html>

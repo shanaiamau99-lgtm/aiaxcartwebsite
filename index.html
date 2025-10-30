@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Premium Accounts — Menu</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <h1>Premium Accounts — Menu</h1>
+    <p class="sub">Choose a service → Click “Order” → PM me directly. I’ll manually send the account details.</p>
+  </header>
+
+  <main class="container">
+    <aside class="sidebar">
+      <h3>Categories</h3>
+      <nav id="catlist"></nav>
+      <hr>
+      <div class="contact">
+        <h4>Direct Message</h4>
+        <p>Telegram, Facebook, or Instagram</p>
+        <div class="contact-buttons">
+          <a id="tg-profile" class="btn neutral" target="_blank">Open Telegram</a>
+          <a id="fb-profile" class="btn neutral" target="_blank">Open Messenger</a>
+          <a id="ig-profile" class="btn neutral" target="_blank">Open Instagram</a>
+        </div>
+      </div>
+    </aside>
+
+    <section class="content">
+      <div id="breadcrumb" class="breadcrumb">All Categories</div>
+      <div id="products" class="grid"></div>
+    </section>
+  </main>
+
+  <div id="orderModal" class="modal hidden">
+    <div class="modal-content">
+      <button class="close" id="modalClose">&times;</button>
+      <h3>Order Summary</h3>
+      <div id="orderSummary"></div>
+
+      <div class="modal-actions">
+        <button id="copyBtn" class="btn primary">Copy Order Text</button>
+        <button id="tgBtn" class="btn success">Message on Telegram</button>
+        <button id="fbBtn" class="btn neutral">Open Messenger</button>
+        <button id="igBtn" class="btn neutral">Open Instagram</button>
+      </div>
+
+      <p class="note">If Messenger or Instagram can’t prefill, just paste the copied text.  
+      You’ll handle the drop manually (no data stored on site).</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

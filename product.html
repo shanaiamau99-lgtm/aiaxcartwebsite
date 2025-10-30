@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Order • Premium Drop Shop</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <h1>Checkout</h1>
+  <nav><a href="index.html">← Back</a></nav>
+</header>
+
+<main class="container">
+  <div id="product-card" class="card"></div>
+
+  <form id="order-form" class="card">
+    <h3>Your Details</h3>
+    <label>Name<input id="cust-name" required></label>
+    <label>Email<input id="cust-email" type="email" required></label>
+    <label>Preferred Contact (Telegram/Facebook/IG)<input id="cust-contact" required></label>
+
+    <h3>Payment</h3>
+    <div class="pay-options">
+      <label><input type="radio" name="pay" value="gcash" checked> GCash</label>
+      <label><input type="radio" name="pay" value="maya"> Maya</label>
+    </div>
+    <div id="pay-box" class="pay-box card muted"></div>
+
+    <label>Upload receipt (optional)<input id="receipt" type="file" accept="image/*"></label>
+
+    <button class="btn primary" type="submit">Place Order</button>
+    <div id="order-result" class="muted"></div>
+  </form>
+</main>
+
+<script type="module" src="app.js"></script>
+<script type="module" src="checkout.js"></script>
+</body>
+</html>

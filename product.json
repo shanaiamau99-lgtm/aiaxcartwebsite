@@ -1,0 +1,41 @@
+{
+  "categories": [
+    {
+      "id": "entertainment",
+      "name": "Entertainment",
+      "children": [
+        {"id":"netflix","name":"Netflix"},
+        {"id":"viu","name":"Viu"},
+        {"id":"vivamax","name":"VivaMax"},
+        {"id":"disney","name":"Disney+"},
+        {"id":"bilibili","name":"Bilibili"},
+        {"id":"wetv","name":"WeTV"}
+      ]
+    },
+    {
+      "id": "streaming",
+      "name": "Streaming",
+      "children": [
+        {"id":"spotify","name":"Spotify"},
+        {"id":"youtube","name":"YouTube"},
+        {"id":"applemusic","name":"Apple Music"}
+      ]
+    },
+    {
+      "id": "educational",
+      "name": "Educational",
+      "children": [
+        {"id":"scribd","name":"Scribd"},
+        {"id":"grammarly","name":"Grammarly"},
+        {"id":"quillbot","name":"Quillbot"},
+        {"id":"canva","name":"Canva"}
+      ]
+    }
+  ],
+  "products": [
+    {"id":"p1","title":"Netflix — 1 month (Standard)","category":"netflix","price":4.50,"note":"Shared account - demo only"},
+    {"id":"p2","title":"Spotify Premium — 1 month","category":"spotify","price":2.99,"note":"Demo listing"},
+    {"id":"p3","title":"Scribd — 1 month","category":"scribd","price":3.49,"note":"Demo listing"},
+    {"id":"p4","title":"Canva Pro — 1 month","category":"canva","price":3.99,"note":"Demo listing"}
+  ]
+}

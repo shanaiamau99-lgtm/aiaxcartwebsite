@@ -111,9 +111,9 @@ function openOrderModal(product) {
     copyToClipboard(text);
     openInstagram();
   };
-  document.getElementById("modalClose").onclick = () => modal.classList.add("hidden");
-}
-
+  document.getElementById("modalClose").addEventListener("click", () => {
+  document.getElementById("orderModal").classList.add("hidden");
+});
 // Message text
 function makeOrderText(p) {
   const now = new Date().toLocaleString();

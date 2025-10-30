@@ -8,7 +8,7 @@ const tgText =
   `Method: ${method.toUpperCase()}%0A` +
   `Status: pending`;
 
-const TELEGRAM_USERNAME = "your_tg_username"; // <-- set yours
+const TELEGRAM_USERNAME = "@shanmau"; // <-- set yours
 const tgLink = `https://t.me/${TELEGRAM_USERNAME}?text=${tgText}`;
 
 document.getElementById('order-result').innerHTML =
